@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ACCOUNT</title>
+    <link rel="stylesheet" type="text/css" href="/styles/account.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="main-header" id="main-header">
+        <header>
+            <h1 class="header-text" id="header-text"><a href="index.html">NO ONE ALLOWED</a></h1>
+        </header>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+                    <h2>LOGIN</h2>
+                    <form>
+                        <input id="login-userid" type="text" class="input-box" placeholder="E-MAIL ADDRESS/USERNAME"
+                            required>
+                        <input id="login-password" type="password" class="input-box" placeholder="PASSWORD" required>
+                        <button id="submit-button" type="button" class="submit-button">SUBMIT</button>
+                        <input id="remember-me-button" type="checkbox"><span>REMEMBER LOGIN</span>
+                    </form>
+                    <button type="button" class="button" onclick="openRegister()">NEW ACCOUNT</button>
+                    <a href="">RESET PASSWORD</a>
+                </div>
+                <div class="card-back">
+                    <h2>REGISTER</h2>
+                    <form>
+                        <input id="new-username" type="text" class="input-box" placeholder="USERNAME" required>
+                        <input id="new-email" type="email" class="input-box" placeholder="E-MAIL ADDRESS" required>
+                        <input id="new-password" type="password" class="input-box" placeholder="PASSWORD" required
+                            minlength="7">
+                        <button id="new-submit-button" type="submit" class="submit-button">SUBMIT</button>
+                        <input id="new-remember-me-button" type="checkbox"><span>REMEMBER LOGIN</span>
+                    </form>
+                    <button type="button" class="button" onclick="openLogin()">ALREADY HAVE ACCOUNT</button>
+                    <a href="">RESET PASSWORD</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="copyright">COPYRIGHT &copy 2025 DOY</p>
+    </div>
+
+
+    <script>
+        var card = document.getElementById("card");
+
+        function openRegister() {
+            card.style.transform = "rotateY(-180deg)";
+        }
+
+        function openLogin() {
+            card.style.transform = "rotateY(0deg)";
+        }
+    </script>
+
+    <script src="/scripts/account.js"></script>
+
+</body>
+
+</html>

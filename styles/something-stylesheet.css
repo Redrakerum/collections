@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+     /* background: linear-gradient(to top right, rgba(134,34,98,1), rgba(95,164,208,1));
+        */
+    background: linear-gradient(to top right, rgb(231, 131, 65), rgb(89, 204, 175));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.4);
+    height: 500px;
+    width: 1000px;
+    top:50%;
+    left:50%;
+    margin-top: -250px;
+    margin-left: -500px;
+    z-index: 92;
+}
+
+.container{
+    box-shadow: 0px 0px 60px 20px rgba(53, 52, 52, 0.3);
+}
+
+.item-frame{
+    height: 400px;
+    width: 955px;
+    background: rgba(255,255,255,0.04);
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -225px;
+    margin-left: -475px;
+    overflow: hidden;
+}
+
+.meta-data{
+    height: 45px;
+    width: 955px;
+    background-color: rgba(255, 255, 255, 0.08);
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: 190px;
+    margin-left: -475px;
+    text-align: center;
+}
+
+.meta-data{
+    padding-top: 12px;
+    color: white;
+}
+
+
+.images{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.image-controls{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -225px;
+    margin-left: 355px;
+    z-index: 90;
+}
+
+.next-button, .prev-button{
+    background: rgba(0, 0, 0,0.4);
+    color: rgba(245,245,245,0.8);
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.next-button, .prev-button{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top:50%;
+    left:50%;
+}
+
+.next-button{
+    margin-left: 170px;
+    margin-top: 170px;
+}
+
+.prev-button{
+    margin-left: -930px;
+    margin-top: 170px;
+}
+
+
+.container:hover {
+    background: rgba(0,0,0,0.7);
+    transition: 0.3s ;
+}
+
+.container, .next-button, .prev-button, .item-frame, .item-frame img{
+    transition: ease-out 0.35s;
+}
+
+.next-button:hover, .prev-button:hover{
+    background: rgba(0, 0, 0,0.7);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.item-frame:hover{
+    transform: scale(1.75);
+    transition: 1.5s;
+}
+
+.item-frame:hover img{
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.75);
+    transition: 2s;
+    z-index: 1;
+}
+
+

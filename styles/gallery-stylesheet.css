@@ -1,0 +1,94 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    /*background-color: white;
+    color: coral; */
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.container{
+    display: grid;
+    /*grid-template-columns: 30% 30% auto; */
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr;
+    gap: 0px;
+}
+
+.main-header{
+    padding: 10px 15px;
+}
+
+.container > div{
+    position: relative;
+    background-color: white;
+    /*height: 700px; */
+    height: 60em;
+    width: auto;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.image-title{
+    position: absolute;
+    text-decoration: none;
+    left: 0.5em;
+    bottom: 0.5em;
+}
+
+.image-attributes{
+    position: absolute;
+    text-decoration: none;
+    bottom: 0.5em;
+    right: 0.5em;
+}
+
+.gimage-one{
+    background-image: url("IMG_1146.jpeg");
+}
+
+.gimage-two{
+    background-image: url("IMG_1376.JPEG");
+}
+
+.gimage-three{
+    background-image: url("IMG_0830.jpeg");
+}
+
+.gimage-four{
+    background-image: url("Snapchat-1304605629.jpg");
+}
+
+.gimage-five{
+    background-image: url("IMG_0194.jpeg");
+}
+
+.copyright{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color:white
+}
+
+a:visited{
+    color: white;
+}
+
+a:active{
+    color: greenyellow;
+}
